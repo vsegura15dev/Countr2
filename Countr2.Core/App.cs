@@ -9,6 +9,17 @@ namespace Countr2.Core
     {
         public override void Initialize()
         {
+
+            CreatableTypes()
+                .EndingWith("Service")
+                .AsInterfaces()
+                .RegisterAsLazySingleton();
+
+            CreatableTypes()
+                .EndingWith("Repository")
+                .AsInterfaces()
+                .RegisterAsLazySingleton();
+
             RegisterAppStart<CountersViewModel>();
         }
     }
