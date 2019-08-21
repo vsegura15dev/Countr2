@@ -7,7 +7,7 @@ using MvvmCross.Droid.Support.V7.AppCompat;
 
 namespace Countr2.Droid.Views
 {
-    [Activity(Label = "@string/AddNewCounter")]
+    [Activity(Label = "@string/AddNewCounter", ParentActivity = typeof(CountersView))]
     public class CounterView : MvxAppCompatActivity<CounterViewModel>
     {
         protected override void OnCreate(Bundle savedInstanceState)
@@ -15,8 +15,6 @@ namespace Countr2.Droid.Views
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.counter_view);
-
-            // Create your application here
         }
 
 
