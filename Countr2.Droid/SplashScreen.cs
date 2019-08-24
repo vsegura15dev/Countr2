@@ -11,6 +11,7 @@ namespace Countr2.Droid
        Label = "Countr2"
        , MainLauncher = true
        , Icon = "@mipmap/ic_launcher"
+       , Theme = "@style/Theme.Splash"
        , NoHistory = true
        , ScreenOrientation = ScreenOrientation.Portrait)]
     public class SplashScreen: MvxSplashScreenAppCompatActivity<MvxAppCompatSetup<App>, App>

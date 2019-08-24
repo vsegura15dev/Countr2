@@ -1,52 +1,73 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="199">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1507">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <scene sceneID="198">
+        <scene sceneID="1506">
             <objects>
-                <viewController id="199" sceneMemberID="viewController" storyboardIdentifier="CountersView" customClass="CountersView">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="196"/>
-                        <viewControllerLayoutGuide type="bottom" id="197"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="200">
+                <tableViewController id="1507" sceneMemberID="viewController" customClass="CountersView" storyboardIdentifier="CountersView">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="1508">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="204" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="20" y="44" width="345" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Text" borderStyle="roundedRect" minimumFontSize="17" id="208" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="20" y="82" width="345" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <constraints>
-                            <constraint id="205" firstItem="204" firstAttribute="top" secondItem="196" secondAttribute="bottom" constant="24"/>
-                            <constraint id="206" firstItem="204" firstAttribute="leading" secondItem="200" secondAttribute="leadingMargin"/>
-                            <constraint id="210" firstItem="208" firstAttribute="leading" secondItem="200" secondAttribute="leadingMargin"/>
-                            <constraint id="211" firstItem="208" firstAttribute="top" secondItem="204" secondAttribute="bottom" constant="17"/>
-                            <constraint id="1287" firstAttribute="trailingMargin" secondItem="204" secondAttribute="trailing" constant="29"/>
-                            <constraint id="1288" firstAttribute="trailingMargin" secondItem="208" secondAttribute="trailing" constant="29"/>
-                        </constraints>
-                    </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="1511" customClass="CounterTableViewCell" reuseIdentifier="CounterCell">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1511" id="1512">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1931" translatesAutoresizingMaskIntoConstraints="NO">
+                                            <rect key="frame" x="20" y="11.5" width="42" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1932" translatesAutoresizingMaskIntoConstraints="NO">
+                                            <rect key="frame" x="370" y="10" width="24" height="24"/>
+                                            <state key="normal" image="Plus"/>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1933" translatesAutoresizingMaskIntoConstraints="NO">
+                                            <rect key="frame" x="308" y="11.5" width="42" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint id="1934" firstItem="1931" firstAttribute="centerY" secondItem="1512" secondAttribute="centerY"/>
+                                        <constraint id="1935" firstItem="1931" firstAttribute="leading" secondItem="1512" secondAttribute="leading" constant="20"/>
+                                        <constraint id="1936" firstItem="1932" firstAttribute="centerY" secondItem="1512" secondAttribute="centerY"/>
+                                        <constraint id="1937" firstAttribute="trailing" secondItem="1932" secondAttribute="trailing" constant="20"/>
+                                        <constraint id="1938" firstItem="1933" firstAttribute="centerY" secondItem="1512" secondAttribute="centerY"/>
+                                        <constraint id="1939" firstItem="1932" firstAttribute="leading" secondItem="1933" secondAttribute="trailing" constant="20"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="CounterName" destination="1931" id="name-outlet-1931"/>
+                                    <outlet property="IncrementButton" destination="1932" id="name-outlet-1932"/>
+                                    <outlet property="CounterCount" destination="1933" id="name-outlet-1933"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1507" id="1509"/>
+                            <outlet property="delegate" destination="1507" id="1510"/>
+                        </connections>
+                    </tableView>
                     <connections>
-                        <outlet property="Label" destination="204" id="name-outlet-204"/>
-                        <outlet property="TextField" destination="208" id="name-outlet-208"/>
+                        <outlet property="TableView" destination="1508" id="name-outlet-1508"/>
                     </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="201" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1513" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="287" y="-71"/>
+            <point key="canvasLocation" x="817" y="-29"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Plus" width="24" height="24"/>
+    </resources>
 </document>

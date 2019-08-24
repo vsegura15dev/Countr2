@@ -17,6 +17,5 @@
       <item name="actionBarStyle">@style/MyTheme.ActionBar</item>
       <item name="android:windowContentOverlay">@null</item>
     -->
-	</style>
-
+    </style>
 </resources>
