@@ -122,17 +122,23 @@
         <ImageAsset Include="Assets.xcassets\Plus.imageset\Plus.png" />
         <ImageAsset Include="Assets.xcassets\Plus.imageset\Plus%402x.png" />
         <ImageAsset Include="Assets.xcassets\Plus.imageset\Plus%403x.png" />
+        <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json" />
+        <ImageAsset Include="Assets.xcassets\AppLaunchImage.imageset\Contents.json" />
+        <ImageAsset Include="Assets.xcassets\AppLaunchImage.imageset\AppLaunchImage.png" />
+        <ImageAsset Include="Assets.xcassets\AppLaunchImage.imageset\AppLaunchImage%402x.png" />
+        <ImageAsset Include="Assets.xcassets\AppLaunchImage.imageset\AppLaunchImage%403x.png" />
     </ItemGroup>
     <ItemGroup>
         <Folder Include="Resources\" />
         <Folder Include="Views\" />
         <Folder Include="Assets.xcassets\Plus.imageset\" />
+        <Folder Include="Assets.xcassets\AppLaunchImage.imageset\" />
     </ItemGroup>
     <ItemGroup>
-        <InterfaceDefinition Include="LaunchScreen.storyboard" />
         <InterfaceDefinition Include="Main.storyboard" />
         <InterfaceDefinition Include="Views\CountersView.storyboard" />
         <InterfaceDefinition Include="Views\CounterView.storyboard" />
+        <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
     </ItemGroup>
     <ItemGroup>
         <None Include="Info.plist" />
