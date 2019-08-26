@@ -39,9 +39,9 @@ namespace Countr2.Core.Services
             messenger.Publish(new CountersChangedMessage(this));
         }
 
-        public Task<List<Counter>> GetAllCounter()
+        public async Task<List<Counter>> GetAllCounter()
         {
-            return repository.GetAll();
+            return await repository.GetAll();
         }
 
         public Task IncrementCounter(Counter counter)

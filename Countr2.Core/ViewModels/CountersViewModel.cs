@@ -7,6 +7,7 @@ using MvvmCross.Navigation;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using Countr2.Core.Models;
+using System.Collections.Generic;
 
 namespace Countr2.Core.ViewModels
 {
@@ -34,6 +35,11 @@ namespace Countr2.Core.ViewModels
         }
 
         public override async Task Initialize()
+        {
+            
+        }
+
+        public override async void ViewAppeared()
         {
             await LoadCounters();
         }

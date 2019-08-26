@@ -7,7 +7,7 @@
     <scenes>
         <scene sceneID="209">
             <objects>
-                <viewController id="210" sceneMemberID="viewController" customClass="CounterView">
+                <viewController id="210" sceneMemberID="viewController" customClass="CounterView" storyboardIdentifier="CounterView" title="Add New Counter">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="207"/>
                         <viewControllerLayoutGuide type="bottom" id="208"/>

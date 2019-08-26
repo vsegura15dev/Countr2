@@ -27,9 +27,11 @@ namespace Countr2.Core.Repositories
             return connection.InsertOrReplaceAsync(counter);
         }
 
-        public Task<List<Counter>> GetAll()
+        public async Task<List<Counter>> GetAll()
         {
-            return connection.Table<Counter>().ToListAsync();
+
+            //return await connection.QueryAsync<Counter>("SELECT * FROM Counter");
+            return await connection.Table<Counter>().ToListAsync();
         }
 
         public Task Delete(Counter counter)
