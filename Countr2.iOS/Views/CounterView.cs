@@ -20,10 +20,12 @@ namespace Countr2.iOS.Views
 
             var button = new UIBarButtonItem(UIBarButtonSystemItem.Add);
             NavigationItem.SetRightBarButtonItem(button, false);
+            button.AccessibilityIdentifier = "action_save_counter";
+            CounterName.AccessibilityIdentifier = "new_counter_name";
 
             var bindingSet = this.CreateBindingSet<CounterView, CounterViewModel>();
 
-
+            
             bindingSet.Bind(CounterName).To(vm => vm.Name);
             bindingSet.Bind(button).To(vm => vm.CreateCommand);
 

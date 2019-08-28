@@ -15,6 +15,7 @@
         />
 
     <EditText
+        android:id="@+id/new_counter_name"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         local:MvxBind="Text Name"

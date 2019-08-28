@@ -1,0 +1,5 @@
+﻿<linker>
+   <assembly fullname="System">
+    <type fullname="System.Windows.Input.ICommand"></type>
+</assembly>
+</linker>

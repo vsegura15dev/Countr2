@@ -47,6 +47,7 @@
         <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
         <CodesignKey>iPhone Developer</CodesignKey>
         <MtouchDebug>true</MtouchDebug>
+        <MtouchLink>None</MtouchLink>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
         <DebugType>none</DebugType>
@@ -73,6 +74,9 @@
       </PackageReference>
       <PackageReference Include="sqlite-net-pcl">
         <Version>1.5.231</Version>
+      </PackageReference>
+      <PackageReference Include="Xamarin.TestCloud.Agent">
+        <Version>0.21.8</Version>
       </PackageReference>
     </ItemGroup>
     <ItemGroup>
@@ -160,12 +164,16 @@
         <Compile Include="Views\CounterView.designer.cs">
           <DependentUpon>CounterView.cs</DependentUpon>
         </Compile>
+        <Compile Include="LinkerPleaseInclude.cs" />
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\Countr2.Core\Countr2.Core.csproj">
         <Project>{C1618518-EDBF-4531-AA3B-7A9BE666ECF0}</Project>
         <Name>Countr2.Core</Name>
       </ProjectReference>
+    </ItemGroup>
+    <ItemGroup>
+      <LinkDescription Include="Linker.xml" />
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
