@@ -65,6 +65,7 @@
     <Compile Include="Views\CountersView.cs" />
     <Compile Include="Views\CounterView.cs" />
     <Compile Include="Views\RecyclerViewCallBack\SwipeItemTouchHelperCallback.cs" />
+    <Compile Include="LinkerPleaseInclude.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
