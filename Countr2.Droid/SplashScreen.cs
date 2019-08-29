@@ -7,6 +7,7 @@ using Android.OS;
 using Microsoft.AppCenter;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
+using Microsoft.AppCenter.Distribute;
 
 namespace Countr2.Droid
 {
@@ -30,7 +31,8 @@ namespace Countr2.Droid
 
             AppCenter.Start("7b5052ff-eb61-4b89-b44a-dde4e8701daa",
                    typeof(Analytics),
-                   typeof(Crashes));
+                   typeof(Crashes),
+                   typeof(Distribute));
         }
     }
 }

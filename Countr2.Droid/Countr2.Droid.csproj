@@ -188,6 +188,9 @@
     <PackageReference Include="Microsoft.AppCenter.Analytics">
       <Version>2.1.1</Version>
     </PackageReference>
+    <PackageReference Include="Microsoft.AppCenter.Distribute">
+      <Version>2.1.1</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Countr2.Core\Countr2.Core.csproj">
