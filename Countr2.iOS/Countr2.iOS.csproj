@@ -80,6 +80,12 @@
       <PackageReference Include="Xamarin.TestCloud.Agent">
         <Version>0.21.8</Version>
       </PackageReference>
+      <PackageReference Include="Microsoft.AppCenter.Crashes">
+        <Version>2.1.1</Version>
+      </PackageReference>
+      <PackageReference Include="Microsoft.AppCenter.Analytics">
+        <Version>2.1.1</Version>
+      </PackageReference>
     </ItemGroup>
     <ItemGroup>
         <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">

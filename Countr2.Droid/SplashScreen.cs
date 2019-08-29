@@ -3,6 +3,10 @@ using Countr2.Core;
 using Android.App;
 using Android.Content.PM;
 using MvvmCross.Droid.Support.V7.AppCompat;
+using Android.OS;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 
 namespace Countr2.Droid
 {
@@ -18,6 +22,15 @@ namespace Countr2.Droid
     {
         public SplashScreen(): base(Resource.Layout.splash_screen)
         {
+        }
+
+        protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
+
+            AppCenter.Start("7b5052ff-eb61-4b89-b44a-dde4e8701daa",
+                   typeof(Analytics),
+                   typeof(Crashes));
         }
     }
 }

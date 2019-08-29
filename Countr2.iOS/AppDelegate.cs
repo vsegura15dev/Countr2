@@ -1,5 +1,8 @@
 ﻿using Countr2.Core;
 using Foundation;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 using MvvmCross.Platforms.Ios.Core;
 using UIKit;
 
@@ -30,6 +33,10 @@ namespace Countr2.iOS
 			UINavigationBar.Appearance.TitleTextAttributes = new UIStringAttributes(attrs);
 			Window = new UIWindow(UIScreen.MainScreen.Bounds);
             Window.MakeKeyAndVisible();
+
+
+            AppCenter.Start("49201660-79e8-4afe-9bd4-f14622bebf83", typeof(Analytics), typeof(Crashes));
+
             return base.FinishedLaunching(application, launchOptions);
         }
     }

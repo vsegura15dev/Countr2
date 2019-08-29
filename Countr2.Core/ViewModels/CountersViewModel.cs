@@ -8,6 +8,7 @@ using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using Countr2.Core.Models;
 using System.Collections.Generic;
+using Microsoft.AppCenter.Analytics;
 
 namespace Countr2.Core.ViewModels
 {
@@ -66,6 +67,7 @@ namespace Countr2.Core.ViewModels
 
         async Task ToNewCounterViewModel()
         {
+            Analytics.TrackEvent("Show add new counter");
             await navigationService.Navigate(typeof(CounterViewModel), new Counter());
         }
 
